@@ -1,0 +1,34 @@
+/************** 
+*** Display ***
+***************/
+.d-flex{display: flex;} 
+/*sätter alla icons på en och samma rad*/
+
+.d-none{display: none;}
+
+
+
+/************** 
+*** Flex ***
+***************/
+.flex-grow{flex-grow: 1;}
+.flex-row{flex-direction: row;}
+.flex-column{flex-direction: column;}
+/*när vi använder med d-flex centrerar vi text iförhållande till varandra */
+.flex-row-reverse{flex-direction: row-reverse;}
+.flex-wrap {flex-wrap: wrap;}/* lägga icons på varandra när vi minskar skärmstorlek*/
+.display-flex{display: flex;}
+
+/**********************
+*** Align & Justify ***
+**********************/
+.justify-content-between{ justify-content:space-between;} 
+/*gör mellanrum mellan icons i x-led*/
+.justify-content-center{ justify-content:center;} 
+/* centrerar in i diven(inne) och det är skilnaden mellan den och mx (runt diven ute)*/
+.justify-content-around{ justify-content:space-around;} 
+/* den gör mellanrum på sidorna och mitten*/
+.align-items-center{align-items: center;}
+/*gör mellanrum mellan margin och icons i y-led*/
+.align-items-start{text-align: start;}
+

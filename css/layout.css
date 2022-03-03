@@ -1,0 +1,264 @@
+/* /****************** 
+*** Header***
+******************/
+.header-height{height: 5rem;}
+
+/************* 
+*** widths ***
+*************/
+.max-width {max-width: 192rem;}
+.max-search-width {min-width:85%;}
+.min-width-search{min-width: 90rem}
+.max-shopping-width {width:8rem;}
+.width-lg {max-width:  50%;}
+.min-width-xxl {min-width: 100%;}
+.width-xxs{max-width: 10%;}
+.search-width{width: 95rem;}
+.search-icon-width{min-width: 7%;}
+
+/************* 
+*** Height ***
+*************/
+.box-height{height:var(--distance-16);}
+
+/************* 
+*** Margin ***
+*************/
+.mr-auto, .mx-auto{margin-right: auto;}
+.ml-auto, .mx-auto{margin-left: auto;}
+/*gör mellanrum mellan bägge kant när man förstora skärmen (vänster o höger diven)
+det räcker med att du skriver mx-auto*/
+
+.mt-0, .my-0 { margin-top: var(--distance-0); }     /* 0rem */ 
+.mb-0, .my-0 { margin-bottom: var(--distance-0); }
+.mt-1, .my-1 { margin-top: var(--distance-1); }     /* .25rem */ 
+.mb-1, .my-1 { margin-bottom: var(--distance-1); }
+.mt-2, .my-2 { margin-top: var(--distance-2); }     /* .5rem */ 
+.mb-2, .my-2 { margin-bottom: var(--distance-2); }
+.mt-4, .my-4 { margin-top: var(--distance-4); }     /* 1rem */ 
+.mb-4, .my-4 { margin-bottom: var(--distance-4); }
+.mt-5, .my-5 { margin-top: var(--distance-5); }     /* 1rem */ 
+.mb-5, .my-5 { margin-bottom: var(--distance-5); }
+.mt-6, .my-6 { margin-top: var(--distance-6); }     /* 1.5rem */ 
+.mb-6, .my-6 { margin-bottom : var(--distance-6); }
+.mt-8, .my-8 { margin-top: var(--distance-8); }     /* 2rem */ 
+.mb-8, .my-8 { margin-bottom: var( --distance-8); }
+.mt-10, .my-10 { margin-top: var(--distance-10); }  /*2.5rem */ 
+.mb-10, .my-10 { margin-bottom: var(--distance-10); }
+.mt-12, .my-12 { margin-top: var(--distance-12); }      /* 3rem */ 
+.mb-12, .my-12 { margin-bottom: var(--distance-12); }
+.mt-15, .my-15 { margin-top: var(--distance-15); }      /* 4rem */ 
+.mb-15, .my-15 { margin-bottom: var(--distance-15); }
+/*gör avstånd mellan(två ämne) text och icons på olika storlikar på höjdled*/ 
+.mr-1, .mx-1 { margin-right: var(--distance-1); }    
+.ml-1, .mx-1 { margin-left: var(--distance-1); }
+.mr-4, .mx-4 { margin-right: var(--distance-4); }    
+.ml-4, .mx-4 { margin-left: var(--distance-4); }
+.mr-6, .mx-6 { margin-right: var(--distance-6); }     
+.ml-6, .mx-6 { margin-left : var(--distance-6); }
+/*gör avstånd mellan(två ämne)text och icons på olika storlikar på sidled*/
+
+.m-4{margin: var(--distance-4);}
+.m-6{margin: var(--distance-6);}
+.m-8{margin: var(--distance-8);}
+.m-15 {margin: var(--distance-15);}
+
+/***************
+*** Padding ***
+***************/
+.p-4{padding:var(--distance-4);}
+.p-5{padding:var(--distance-5);}
+.p-6{padding:var(--distance-6);}
+.p-8{padding:var(--distance-8);}
+.p-12{padding:var(--distance-12);}
+.p-15{padding:var(--distance-15);}
+/* gör mellanrum runt icons*/
+
+.pr-4, .px-4{padding-right:var(--distance-4);}
+.pl-4, .px-4{padding-left:var(--distance-4);}
+.pr-8, .px-8{padding-right:var(--distance-8);}
+.pl-8, .px-8{padding-left:var(--distance-8);}
+.pr-12, .px-12{padding-right:var(--distance-12);}
+.pl-12, .px-12{padding-left:var(--distance-12);}
+/*gör mellanrum på bägge kanter snygga till sidan px-12 motsvarar bägge sida*/
+
+.pt-2, .py-2{padding-top:var(--distance-2);}
+.pb-2, .py-2{padding-bottom:var(--distance-2);}
+
+/******************
+***Cards ***
+******************/
+/* .card-width{max-width:30%;} */
+.card-width-min{max-width:30%;}
+/* .card-height{max-height:50%;} */
+.cart-pos{
+    
+    bottom: -10px;
+   
+}
+.star-pos{
+    right: 10px;
+    bottom: -25px;
+    
+}
+.text-pos{
+    right: 40px;
+    bottom: -5px;
+  
+}
+.heart-pos{
+    right:10px;
+    top: 10px;
+    
+}
+/************* 
+*** Images ***
+*************/
+.img-height{max-height: 10rem;}
+.img-width{max-width:10rem;}
+.logo-width{max-width: 13rem;}
+.img-lg-width{max-width: 60%;}
+/*begränsa foto storlek*/
+.overflow-hidden{overflow:hidden;}
+/*visar en bild fast vi har flera bilder i skärmen*/
+
+.slider-width{width:400%;}
+ /*100% per bild*/
+.slider-container{width:25%;}
+ /* visa första bild av 4 bilder*/
+.slider-image{width: 100%; object-fit: cover;}
+/*den gör att visa hela bilden oavsett vad vi har för skärmstorlek*/
+
+.slider-animation{animation: 30s slider-keyframes infinite;}
+@keyframes slider-keyframes{
+    0% {left: 0%;}
+    15% {left: -100%;}
+    30% {left: -200%;}
+    45% {left: -300%;}
+    60% {left: -200%;}
+    75% {left: -100%;}
+    100% {left: 0%;}
+}
+/*rörande skärm går enligt sekunder */
+
+
+/************************
+*** Typography/ övrigt***
+************************/
+.text-decoration-none{text-decoration: none;}
+/* tas bort underline under icons*/
+.text-center{text-align: center;}
+.text-right{text-align:right;}
+/*centrera texten */
+.text-uppercase{text-transform: uppercase;}
+/*stora bokstäver*/
+.text-blod{font-weight: bold;}
+
+.text-size-xxs{font-size: var(--display-xxs);}
+.text-size-xs{font-size: var(--display-xs);}
+.text-size-sm{font-size: var(--display-sm);}
+.text-size-md{font-size: var(--display-md);}
+.text-size-lg{font-size: var(--display-lg);}
+.text-size-xl{font-size: var(--display-xl);}
+.text-size-xxl{font-size: var(--display-xxl);}
+
+.circle{border-radius: 100%;}
+.lg-circle{width: 15rem; height: 15rem;}
+/*gör icons som cirkel */
+
+.shadow-sm{box-shadow:var(--shadow-small-light);}
+.shadow-lg{box-shadow:var(--shadow-large-light);}
+/*gör skugga runt icons */
+
+
+.lh-sm{line-height: var(--line-height-sm);}
+.lh-md{line-height: var(--line-height-md);}
+.lh-lg{line-height: var(--line-height-lg);}
+.lh-xl{line-height: var(--line-height-xl);}
+/*justera höjden mellan icons och text eller
+ mellan två text eller mer i icon eller ruta  */
+
+/******************
+*** Buttons ***
+******************/
+nav div a:not(:first-child){margin-left: var(--distance-12);}
+/* gör jämt mellanrum mellan icons*/
+
+.icon-badge{
+    top: -10px;
+    right: -10px;
+    padding: var(--distance-1) var(--distance-3);
+    /* den lilla icon position på huvud icon (nr3) */
+}
+
+/******************
+*** Position ***
+******************/
+
+.position-relative{position:relative !important;}
+.position-absolute{position:absolute !important;}
+/* absolut går ihop med relative för att relative är en bildram till absolut position*/
+
+.centerXY{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* positionera texten i mitt av skärmen eller mitt av icon*/
+}
+
+
+/****************
+*** Borders *** 
+****************/ 
+.border-small-white{border: var(--border-xs-white);}
+/* gör en liten cirkelkontur runt huvudcirkel */
+
+.border-radius{border-radius: var(--border-radius-sm);}
+/* fina ut icon kanter gör en liten båge*/
+
+.border-bottom-xs{border-bottom: var(--border-xs);}
+/* gör gränsline mellan icons behöverzooma in för att se den*/
+.border-xs{border: var(--border-sm);}
+
+.border-lightcircle-sm{border: var(--border-sm);}
+.border-lightcircle-md{border: var(--border-xs);}
+.border-lightcircle-lg{border: var(--border-lg);}
+/*gör en liten cirkel (kontur cirkel) i huvudcirkel */
+
+
+.border-transparent{border: var(--border-transparent);}
+
+/****************
+*** Features *** 
+****************/ 
+.f-width{max-width: 33% ;}
+/*avstånd mellan varje icon*/
+.icon-maincircle{width: 7.6rem;height: 7.6rem;padding: 0,375;}
+/*huvud cirkel forma ut icons enligt vår storlek*/
+.icon-subcircle{width: 6.2rem; height: 6.2rem; line-height:6rem;}
+.icon-form-control {right: 10px;top: 10px;}
+.icon-form-left {left: 10px;bottom: 13px;}
+.icon-form-center {left: 10px;;bottom: 2px;}
+/*icon position */
+
+/******************
+***Statistics ***
+******************/
+.statistics-image{
+    background-image:url('../images/fun-facts/fun-facts-bg-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+.button:hover{color: brown;
+
+
+}
+.blue-color:hover{color: #26ace0;
+
+}
+/* .button:active{
+    background-color: rgb(54, 42, 165);
+
+} */
